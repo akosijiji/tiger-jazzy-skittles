@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node server",
     "start-dev": "webpack-dev-server --open",
-    "prestart": "webpack --mode production"
+    "build": "webpack --mode production"
   },
   "author": "Mary Sabio",
   "license": "ISC",
