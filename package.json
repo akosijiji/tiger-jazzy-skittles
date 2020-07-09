@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "node server",
     "start-dev": "webpack-dev-server --open",
-    "prestart": "webpack --mode production",
-    "start": "node server"
+    "prestart": "webpack --mode production"
   },
   "author": "Mary Sabio",
   "license": "ISC",
