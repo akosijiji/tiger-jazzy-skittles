@@ -2,15 +2,16 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "webpack --mode production",
-    "start-dev": "webpack-dev-server --open"
+    "start-dev": "webpack-dev-server --open",
+    "prestart": "webpack --mode production",
+    "start": "node server"
   },
   "author": "Mary Sabio",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
     "history": "^5.0.0",
     "moment": "^2.27.0",
     "react": "^16.13.1",
