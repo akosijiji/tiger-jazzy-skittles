@@ -26,7 +26,7 @@ module.exports = {
     externals: {
         // global app config object
         config: JSON.stringify({
-            apiUrl: 'http://localhost:4000'
+            apiUrl: 'https://tiger-jazzy-skittles-api.herokuapp.com'
         })
     }
 }
