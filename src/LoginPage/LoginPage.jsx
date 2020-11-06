@@ -6,7 +6,7 @@ import { userActions } from '../_actions';
 class LoginPage extends React.Component {
     constructor(props) {
         super(props);
-
+        
         this.state = {
             username: '',
             password: '',

@@ -1,6 +1,7 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    entry: './src/index.jsx',
     mode: 'development',
     resolve: {
         extensions: ['.js', '.jsx']
@@ -20,7 +21,7 @@ module.exports = {
         publicPath: '/'
     },
     devServer: {
-        publicPath:'/',
+        // publicPath:'/',
         historyApiFallback: true
     },
     externals: {

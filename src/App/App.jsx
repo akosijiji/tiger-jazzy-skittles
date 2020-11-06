@@ -1,6 +1,5 @@
 import React from 'react';
-import { Switch } from 'react-router';
-import { Router, Route, Redirect } from 'react-router-dom';
+import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { history } from '../_helpers';
@@ -35,7 +34,7 @@ class App extends React.Component {
                         {alert.message &&
                             <div className={`alert ${alert.type}`}>{alert.message}</div>
                         }
-                        <Router history={history}>
+                        <Router history={history} basename="/">
                             <Switch>
                                 <PrivateRoute exact path="/" component={HomePage} />
                                 <PrivateRoute exact path="/edit-post/:id" component={EditPostPage} />
@@ -45,8 +44,7 @@ class App extends React.Component {
                                 <PrivateRoute exact path="/user-profile/:id" component={UserProfilePage} />
                                 <Route path="/login" component={LoginPage} />
                                 <Route path="/register" component={RegisterPage} />
-                                <Route exact path="/logout" component={LogoutPage} />
-                                {/* <Redirect to="/404" /> */}
+                                <Route path="/logout" component={LogoutPage} />
                                 <Redirect from="*" to="/" />
                             </Switch>
                         </Router>
